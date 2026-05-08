@@ -1,0 +1,60 @@
+# ==============================================================================
+# database/.gitignore
+# ==============================================================================
+
+# --- Секреты и ключи (никогда не коммитить) ---
+.env
+keys.env
+*.secrets
+.env.local
+.env.production
+prod.env
+secrets/
+
+# --- Данные баз (volume mounts — только структура папок в репо) ---
+backups/mysql/*
+backups/postgres/*
+!backups/mysql/.gitkeep
+!backups/postgres/.gitkeep
+
+# --- Логи ---
+logs/mysql/*
+logs/postgres/*
+!logs/mysql/.gitkeep
+!logs/postgres/.gitkeep
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Редакторы ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Временные файлы ---
+*.tmp
+*.bak
+*.orig
+
+# --- SECURITY: Environment and Sensitive Files (AI Managed) ---
+*.env
+.env
+.env.*
+stack.env
+stack-*.env
+*.key
+*.pem
+*.pub
+secret*
+!.env.example
+!.env.sample
+!*.env.example
+!*.env.sample
