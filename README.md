@@ -10,6 +10,12 @@ SOCKS5 proxy server в Docker контейнере.
 
 ## Ссылки для Telegram
 
+**По домену:**
+```
+tg://socks?server=socks-proxy.cloudweb.name&port=1080&user=webup&pass=<PASSWORD>
+```
+
+**Если домен не работает (по IP):**
 ```
 tg://socks?server=212.43.151.109&port=1080&user=webup&pass=<PASSWORD>
 ```
