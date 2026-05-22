@@ -1,11 +1,10 @@
 services:
   socks5-proxy:
-    image: serjs/go-socks5-proxy
+    image: serjs/go-socks5-proxy:latest
     container_name: socks5-proxy
     restart: unless-stopped
     ports:
       - "1080:1080"
     environment:
-      - PROXY_IP=${PROXY_IP}
       - PROXY_USER=${PROXY_USER}
       - PROXY_PASSWORD=${PROXY_PASSWORD}
