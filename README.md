@@ -11,8 +11,10 @@ SOCKS5 proxy server в Docker контейнере.
 ## Ссылки для Telegram
 
 ```
-tg://socks?server=${PROXY_SERVER}&port=${PROXY_PORT}&user=${PROXY_USER}&pass=${PROXY_PASSWORD}
+tg://socks?server=212.43.151.109&port=1080&user=webup&pass=<PASSWORD>
 ```
+
+> `<PASSWORD>` — значение `PROXY_PASSWORD` из `socks.env`.
 
 ## Запуск
 
